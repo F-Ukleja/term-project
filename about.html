@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <title>About</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+    <script>
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+ 
+<header>
+    <span class="site-title">Portfolio</span>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+</header>
+ 
+<main>
+    <h1 class="section-heading">About Me</h1>
+    <p class="section-subheading">&nbsp;</p>
+ 
+    <div class="about-grid">
+      <div class="card">
+        <h3>Bio</h3>
+        <p>
+          I’ve always been destined to work with computers, and 3 years ago I got the opportunity to go to school for Web Development. Through this journey, I’ve had introductions to everything from Microsoft Office to advanced C++, and everything in between. I have grown very passionate about learning the ins and outs of all thing’s tech related. I now have a strong foundation in the area of servers, operating systems and databases, and I’m working to be more creative and efficient in the frontend.</p>
+      </div>
+ 
+      <div class="card">
+        <h3>Programming Languages&nbsp;</h3>
+        <p>
+		<i class="devicon-bash-plain colored skill-icon"></i>
+		<i class="devicon-html5-plain colored skill-icon"></i>
+		<i class="devicon-css3-plain colored skill-icon"></i>
+		<i class="devicon-cplusplus-plain colored skill-icon"></i>
+		<i class="devicon-csharp-plain colored skill-icon"></i>
+		<i class="devicon-javascript-plain colored skill-icon"></i>
+		<i class="devicon-python-plain colored skill-icon"></i>
+		<i class="devicon-php-plain colored skill-icon"></i>
+		<i class="devicon-azuresqldatabase-plain colored skill-icon"></i>
+          &nbsp; </p>
+      </div>
+	<div class="card">
+        <h3>Tools</h3>
+        <p>
+		<i class="devicon-archlinux-plain colored skill-icon"></i>
+		<i class="devicon-codepen-plain colored skill-icon"></i>
+		<i class="devicon-apache-plain colored skill-icon"></i>
+		<i class="devicon-visualstudio-plain colored skill-icon"></i>
+		<i class="devicon-dreamweaver-plain colored skill-icon"></i>
+		<i class="devicon-mysql-plain colored skill-icon"></i>
+		<i class="devicon-github-plain colored skill-icon"></i>
+		<i class="devicon-vim-plain colored skill-icon"></i>
+		<i class="devicon-json-plain colored skill-icon"></i>
+		<i class="devicon-photoshop-plain colored skill-icon"></i>
+		<i class="devicon-linux-plain colored skill-icon"></i>
+		<i class="devicon-powershell-plain colored skill-icon"></i>
+		<i class="devicon-vscode-plain colored skill-icon"></i>
+		<i class="devicon-clion-plain colored skill-icon"></i>
+          &nbsp; </p>
+      </div>
+		<div class="card">
+        <h3>I have experience in Office, graphic design and video editing, as well as using Cinema4D.</h3>
+		</div>
+    </div>
+  </main>
+ 
+  <footer>
+    <p>&copy; 2026. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

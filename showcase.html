@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <title>Showcase</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <span class="site-title">Portfolio</span>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="showcase.html" class="active">Showcase</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+<main>
+    <h1 class="section-heading">Gallery</h1>
+    <p class="section-subheading">A collection of my work.</p>
+ 
+    <div class="gallery-grid">
+      <div class="project-card">
+  <div class="project-preview">
+    <iframe src="SiteProjects/BouncingBall/index2.html" title="Bouncing Ball"></iframe>
+  </div>
+  <div class="project-info">
+    <h3>Bouncing Ball</h3>
+    <p class="text-muted">A canvas animation with the ability to detect wall collision.</p>
+    <div class="project-tags">
+      <span class="tag">JavaScript</span>
+      <span class="tag">Canvas API</span>
+    </div>
+    <a href="SiteProjects/BouncingBall/index2.html" target="_blank" class="project-link">Open Full Screen →</a>
+  </div>
+</div>
+
+      <div class="project-card">
+        <div>
+          <h3>Project 2</h3>
+          <p>description</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <h3>Project 3</h3>
+          <p>description</p>
+        </div>
+      </div>
+    </div>
+	</main>
+
+  <footer>
+    <p>&copy; 2026. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="layout.css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<script>
+const saved = localStorage.getItem('theme');
+if (saved) document.documentElement.setAttribute('data-theme', saved);
+</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+    <span class="site-title">Portfolio</span>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+	<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+	</header>
+<main>
+	<section class="intro-section">
+		<h1>Hello World!</h1>
+		<h1>&nbsp;I'm Frank Ukleja</h1>
+<p class="tagline">
+			I am an aspiring full stack developer that has spent the past few years learning, and in certain spaces, mastering the most crucial aspects of web development. While I currently have little professional experience, I am always seeking opportunities to learn, grow and build any chance I get.
+		</p>
+	</section>
+</main>	
+<footer>
+	<p>&copy; 2026. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

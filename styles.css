@@ -1,0 +1,179 @@
+/*♦ styles.css ♦*/
+
+/*♦ Fonts ♦*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/*♦ Light Colors ♦*/
+:root {
+  --bg: #F8F7F4;
+  --surface: #FFFFFF;
+  --border: #D8D4CC;
+  --text: #1A1916;
+  --text-muted: #6B6760;
+  --accent: #660000;
+  --accent-text: #FFFFFF;
+  --input-bg: #FFFFFF;
+  --nav-active: #660000;
+  --card-bg: #FFFFFF;
+}
+
+/*♦ Dark Colors ♦*/
+[data-theme="dark"] {
+	--bg: #141412;
+	--surface: #1E1D1B;
+	--border: #333230;
+	--text: #F0ECE4;
+	--text-muted: #8A8580;
+	--accent: #920000;
+	--accent-text: #141412;
+	--input-bg: #1E1D1B;
+	--nav-active: #920000;
+	--card-bg: #1E1D1B;
+}
+
+/*♦ Index ♦*/
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	transition: background-color 0.25, color 0.25s;
+}
+
+/*♦ Header ♦*/
+header {
+	background-color: var(--surface);
+}
+
+header .site-title {
+	
+}
+
+/*♦ Nav ♦*/
+nav ul li a {
+	color: var(--text-muted);
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	transition: color 0.15s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+	color: var(--nav-active);
+}
+
+/*♦ Footer ♦*/
+footer {
+	background-color: var(--surface);
+	color: var(--text-muted);
+}
+
+/*♦ Headings ♦*/
+h1, h2, h3 {
+	font-family: 'DM Serif Display', serif;
+	line-height: 1.2;
+	color: var(--text);
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+p {
+	color: var(--text);
+	margin-bottom: 0.75rem;
+}
+
+/*♦ Cards ♦*/
+.card,
+.project-card,
+.contact-info {
+ 	background-color: var(--card-bg);
+}
+ 
+.card h3,
+.project-card h3 {
+ 	font-size: 1.05rem;
+ 	margin-bottom: 0.4rem;
+}
+
+.card p,
+.project-card p {
+	font-size: 0.92rem;
+	color: var(--text-muted);
+}
+
+/*♦ Shared Headings ♦*/
+.section-heading {
+ 	color: var(--text);
+ 	font-family: 'DM Serif Display', serif;
+	text-align: center;
+}
+
+/*♦ Gallery Cards ♦*/
+.project-card {
+ 	transition: border-color 0.2s;
+}
+ 
+.project-card:hover {
+ 	border-color: var(--accent);
+}
+
+/*♦ Form Input ♦*/
+.contact-form input:focus,
+.contact-form textarea:focus {
+ 	outline: none;
+ 	border-color: var(--accent);
+}
+
+/*♦ Theme Toggle ♦*/
+.theme-toggle:hover {
+	background: var(--border);
+}
+
+.text-muted {
+	color: var(--text-muted);
+}
+
+.mt-1 {
+	margin-top: 0.5rem;
+}
+
+.mt-2 {
+	margin-top: 1rem;
+}
+
+.mt-3 {
+	margin-top: 1.5rem;
+}
+
+/*♦ Icons ♦*/
+
+.skill-icon {
+  font-size: 48px;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
